@@ -9,7 +9,7 @@
 </head>
 <body class="max-h-screen font-sans">
     
-    <div class="fixed TOP-INFO-BAR w-full py-2 bg-gray-100 border-gray-400" >
+    <div class="fixed TOP-INFO-BAR w-full py-2 bg-gray-100 border-gray-400 z-40" >
         <div class="MAIN-CONTAINER flex items-center justify-between px-4 mx-auto text-sm text-gray-500" >
             <div class="LEFT-INFO flex space-x-5 text-yellow-600">
                 <span> <i class="fa fa-map-marker-alt text-primary me-2"></i>  123 Street, New York, USA</span>
@@ -28,24 +28,40 @@
         </div>
     </div>
     
-    <header>
-        <div>
-            <div>
+    <header class="fixed w-full bg-white border-b border-gray-300  mt-9 z-40 ">
+        <div class="flex items-center justify-between  mx-auto">
+            <div class=" flex items-center ml-10 space-x-4 text-4xl font-bold text-yellow-700">
                 <h1>WoDDy</h1>
             </div>
             <nav>
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">SERVICE</a></li>
-                    <li><a href="">PAGES</a></li>
-                    <li><a href="">CONTACT</a></li>
-                    <li><a href="">Get A Q2uote</a></li>
+                <ul class="flex space-x-4 font-bold ">
+                    <li class=" text-yellow-600 hover:text-yellow-400 py-4"><a href="#">HOME</a></li>
+                    <li class=" text-yellow-600 hover:text-yellow-400 py-4"><a href="">ABOUT</a></li>
+                    <li class=" text-yellow-600 hover:text-yellow-400 py-4"><a href="">SERVICE</a></li>
+                    <li class=" text-yellow-600 hover:text-yellow-400 py-4"><a href="">PAGES</a></li>
+                    <li class=" text-yellow-600 hover:text-yellow-400 py-4"><a href="">CONTACT</a></li>
+                    <li class=" bg-yellow-600 text-white py-4 px-10 lg:px-20 hidden lg:block hover:bg-yellow-400 rounded-l-md"><a href="">Get A Quote</a></li>
                 
                 </ul>
             </nav>        
         </div>
     </header>
-  
+  <!--wellcome-->
+    <div class="WELCOME-MAIN-IMG h-screen bg-white bg-cover" style="background-image: url('/img/carousel-1.jpg');">
+        <div class="Text flex flex-col items-center h-full text-center text-white bg-black bg-opacity-70 py-48">
+            <h2 class="p-5 text-2xl">WELLCOME TO WODDY</h2>
+            <h1 class="mb-8 text-6xl font-bold">Best Carpenter & <br> Craftsman Services</h1>
+            <p class="mb-8 text-lg mx-36">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, odio et. Quisquam cum eaque fugiat voluptas non  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, odio et. Quisquam cum eaque fugiat voluptas no vero omnis unde impedit sunt inventore iusto, velit, rem quaerat id quasi amet neque laborum quidem praesentium! Quo, earum rerum! Similique necessitatibus pariatur quam cumque voluptatem quia vero minima dolorum vitae blanditiis magni, adipisci possimus atque laboriosam, dolores illo? Alias, aliquam sed nam minus quas delectus animi rem quia consequatur expedita sint harum nihil voluptates ipsa vero. Sit, quod. Consectetur ullam suscipit enim eos distinctio mollitia quas atque magnam vel est dignissimos quia dolor ut officia ducimus inventore nesciunt voluptatibus quisquam, vitae necessitatibus?
+            </p>
+        
+            <div>
+                <button class=" bg-yellow-700 text-white py-3 px-5 md:py-3 md:px-5 mr-3">Read More</button>
+                <button class=" bg-white text-black py-3 px-5 md:py-3 md:px-5 mr-3">Free Quote</button>
+            </div>
+        </div>
+    </div>
+
+    <div>1</div>
+
 </body>
 </html>
