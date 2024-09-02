@@ -12,7 +12,7 @@
 </head>
 
 <body class="max-h-screen font-sans bg-white">
-    <div class="fixed TOP-INFO-BAR w-full py-2 bg-gray-100 border-gray-400 z-4">
+    <div class="fixed TOP-INFO-BAR w-full py-2 bg-gray-100 border-gray-400 z-4 ">
         <div class="MAIN-CONTAINER flex items-center justify-between px-4 mx-auto text-sm text-gray-500">
             <div class="LEFT-INFO flex space-x-5 text-yellow-600">
                 <span>
@@ -360,7 +360,7 @@
 
 
     <!-- Projects Start -->
-    <div class="MAIN-Container mx-auto py-5">
+    <div class="Container mx-auto py-5">
         <div class="HEADING text-center mb-10">
             <h1 class="text-5xl font-semibold mb-5">__Our Projects__</h1>
         </div>
@@ -489,6 +489,48 @@
         </div>
     </div>
 
+    <!-- Quote Start -->
+    <div class="container-MAIN mx-auto py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 bg-gray-100">
+            <!-- Image Section -->
+            <div class="relative h-96 w-full ">
+                <img class="absolute inset-0 w-full h-full object-cover" src="img/quote.jpg" alt="Quote Image">
+            </div>
+
+            <!-- Form Section -->
+            <div class="flex items-center p-6 lg:p-12">
+                <div class="w-full">
+                    <h1 class="text-4xl font-bold mb-4">Free Quote</h1>
+                    <p class="text-gray-700 mb-8">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+                        diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat
+                        amet.</p>
+                    <form>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <input type="text" placeholder="Your Name"
+                                class="border rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary">
+                            <input type="email" placeholder="Your Email"
+                                class="border rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary">
+                            <input type="text" placeholder="Your Mobile"
+                                class="border rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary">
+                            <select class="border rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary">
+                                <option selected>Select A Service</option>
+                                <option value="1">Service 1</option>
+                                <option value="2">Service 2</option>
+                                <option value="3">Service 3</option>
+                            </select>
+                            <textarea placeholder="Special Note"
+                                class="border rounded px-4 py-3 sm:col-span-2 focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                            <button type="submit"
+                                class="w-full bg-primary text-white py-3 rounded hover:bg-primary-dark sm:col-span-2">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quote End -->
+
+
     <!-- Footer Start -->
     <div class="bg-gray-800 text-gray-300 py-10 mt-5">
         <div class="container mx-auto px-5">
@@ -560,4 +602,5 @@
 
 
 </body>
+
 </html>
