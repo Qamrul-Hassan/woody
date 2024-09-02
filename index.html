@@ -12,7 +12,7 @@
 </head>
 
 <body class="max-h-screen font-sans bg-white">
-    <div class="fixed TOP-INFO-BAR w-full py-2 bg-gray-100 border-gray-400 z-4 ">
+    <div class="fixed TOP-INFO-BAR w-full py-2 bg-gray-100 border-gray-400 z-4 overflow-hidden">
         <div class="MAIN-CONTAINER flex items-center justify-between px-4 mx-auto text-sm text-gray-500">
             <div class="LEFT-INFO flex space-x-5 text-yellow-600">
                 <span>
@@ -41,7 +41,7 @@
         </div>
     </div>
 
-    <header class="fixed w-full bg-white border-b border-gray-300 mt-9 z-4">
+    <header class="fixed w-full bg-white border-b border-gray-300 mt-9 z-4 overflow-hidden">
         <div class="flex items-center justify-between mx-auto">
             <div class="flex items-center ml-10 space-x-4 text-4xl font-bold text-yellow-700">
                 <h1>WoDDy</h1>
@@ -360,7 +360,7 @@
 
 
     <!-- Projects Start -->
-    <div class="Container mx-auto py-5">
+    <div class="Container mx-auto py-5 ">
         <div class="HEADING text-center mb-10">
             <h1 class="text-5xl font-semibold mb-5">__Our Projects__</h1>
         </div>
@@ -377,9 +377,9 @@
                 </li>
             </ul>
         </div>
-        <div class=" CARD-MAIN-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="CARD-1 rounded overflow-hidden shadow-lg">
-                <div class="relative overflow-hidden">
+        <div class=" CARD-MAIN-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+            <div class="CARD-1 rounded overflow-hidden1 shadow-lg">
+                <div class="relative overflow-hidden ">
                     <img class="w-full" src="img/portfolio-1.jpg" alt="Project Image 1">
                     <div
                         class="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition duration-300 flex justify-center items-center space-x-2">
@@ -552,7 +552,7 @@
                 <span class="text-sm text-gray-500">Designation</span>
             </div>
             <!-- Team Member 2 -->
-            <div class="flex flex-col items-center text-center group relative">
+            <div class="flex flex-col items-center text-center group relative ">
                 <div class="overflow-hidden rounded-lg relative">
                     <img class="w-full object-cover h-80 transform transition duration-500 ease-in-out group-hover:scale-105"
                         src="img/team-2.jpg" alt="Team Member 2">
@@ -600,57 +600,27 @@
         </div>
     </div>
     <!-- Team End -->
-<!-- Testimonial Start -->
-<div class="relative container mx-auto py-5">
-    <div class="text-center mb-5">
-        <h1 class="text-4xl font-bold">Testimonial</h1>
-    </div>
-    <div class="relative group">
-        <div class="flex overflow-hidden relative">
-            <div class="testimonial-carousel flex transition-transform duration-500">
-                <div class="testimonial-item text-center flex-shrink-0 w-full">
-                    <div class="relative">
-                        <img class="rounded-full bg-gray-200 p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 90px; height: 90px;">
-                        <div class="bg-white p-4 shadow-md">
-                            <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
-                            <h5 class="mt-3 font-bold">Client Name</h5>
-                            <span class="text-sm text-gray-500">Profession</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center flex-shrink-0 w-full">
-                    <div class="relative">
-                        <img class="rounded-full bg-gray-200 p-2 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 90px; height: 90px;">
-                        <div class="bg-white p-4 shadow-md">
-                            <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
-                            <h5 class="mt-3 font-bold">Client Name</h5>
-                            <span class="text-sm text-gray-500">Profession</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center flex-shrink-0 w-full">
-                    <div class="relative">
-                        <img class="bg-gray-200 p-2 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 90px; height: 90px;">
-                        <div class="bg-white p-4 shadow-md">
-                            <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
-                            <h5 class="mt-3 font-bold">Client Name</h5>
-                            <span class="text-sm text-gray-500">Profession</span>
-                        </div>
-                    </div>
-                </div>
+    <div class="py-22 bg-gray-100 text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">Testimonial</h2>
+        <h3 class="text-xl font-semibold text-gray-600 mb-8">What Say Our Patients!</h3>
+        <div class="relative max-w-xl mx-auto bg-white shadow-lg rounded-lg p-8">
+            <div class="absolute top-1/2 transform -translate-y-1/2 left-0">
+                <button class="bg-white-200 hover:bg-gray-300 text-blue-600 p-1 rounded-full">
+                    <i class="fas fa-arrow-left text-2xl"></i>
+                </button>
             </div>
-            <!-- Pseudo-elements for arrows -->
-            <div class="absolute inset-0 flex items-center justify-between px-4">
-                <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <span class="carousel-prev bg-gray-200 p-2 rounded-full cursor-pointer">‹</span>
-                </div>
-                <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <span class="carousel-next bg-gray-200 p-2 rounded-full cursor-pointer">›</span>
-                </div>
+            <img src="/img/testimonial-1.jpg" alt="Patient Image" class="w-24 h-24 p-1 mx-auto mb-4">
+            <div class="absolute top-1/2 transform -translate-y-1/2 right-0">
+                <button class="bg-white-200 hover:bg-gray-300 text-blue-600 p-1 rounded-full">
+                    <i class="fas fa-arrow-right text-2xl"></i>
+                </button>
             </div>
+            <p class="text-gray-600 italic mb-6">"Cras ac lorem purus magna ipsum dolor amet purus leo augue sed dolor sit amet volutpat. Morbi ligula diam velit etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet nunc eu ullamcorper urna."</p>
+            <div class="text-lg font-semibold text-gray-800">Patient Name</div>
+            <div class="text-gray-500">Profession</div>
         </div>
     </div>
-</div>
+    
     <!-- Footer Start -->
     <div class="bg-gray-800 text-gray-300 py-10 mt-5">
         <div class="container mx-auto px-5">
